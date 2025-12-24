@@ -1,0 +1,112 @@
+# nosso-amor
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosso Amor</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    background: radial-gradient(circle at top, #0b0b2b, #000);
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Great Vibes', cursive;
+}
+
+img {
+    max-width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255,255,255,0.4);
+    margin: 25px 0;
+}
+
+.opening {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gift {
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(135deg, #ff9ebd, #ff5fa2);
+    border-radius: 20px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+.hidden {
+    display: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="opening" id="open">
+    <div class="gift"></div>
+    <h1>Um presente para você</h1>
+</div>
+
+<div id="content" class="hidden">
+
+<section>
+<h2>O começo de tudo</h2>
+<img src="44E701B7-24BC-427A-835C-22C6430D230D.jpeg">
+<p>Nos conhecemos sob a luz da lua, naquela noite de 15 de dezembro de 2021. A lua parecia nos observar, como se soubesse que ali nascia algo eterno.</p>
+</section>
+
+<section>
+<h2>O pedido</h2>
+<img src="28F7BB46-8B6B-45B2-A6DF-F6811B266595.jpeg">
+<p>Entre sorrisos, emoção e amor, naquele dia tudo fez sentido.</p>
+</section>
+
+<section>
+<h2>O sim</h2>
+<img src="D1332FB0-3E25-49C3-B8E4-0810CCF37644.jpeg">
+<p>O momento em que o amor deixou de ser promessa e se tornou eternidade.</p>
+</section>
+
+<section>
+<h2>Para sempre</h2>
+<img src="7FD453C1-6B55-454B-B8F5-0AEF251FE3F6.jpeg">
+<img src="45078424-B484-4CFF-80FD-6EFF54AA2FAD.jpeg">
+<p>Eu te escolheria em todas as vidas. Obrigada por ser meu lar.</p>
+</section>
+
+<section>
+<h2>🎵 Nossa trilha sonora</h2>
+<p>Never Be Alone – Shawn Mendes</p>
+<p>Amor Para Recomeçar – Jorge & Mateus</p>
+<p>Yellow – Coldplay</p>
+</section>
+
+<script>
+setTimeout(() => {
+  document.getElementById("open").style.display = "none";
+  document.getElementById("content").classList.remove("hidden");
+}, 3500);
+</script>
+
+</body>
+</html>
